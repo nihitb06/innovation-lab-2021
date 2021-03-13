@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html xmlns=http://www.w3.org/1999/xhtml>
 <meta content="text/html; charset=UTF-8" http-equiv=Content-Type>
-<title>Robby Leonardi | hey@rleonardi.com</title>
+<title>Hacking NASA with HTML</title>
 <link href=css/style.css rel=stylesheet>
 
 <body>
 <script src=script/jquery-3.3.1.min.js></script>
 <script src=script/jquery-ui.min.js></script>
 <script src=script/detect-browser-device.js></script><noscript><div id=javascript-banner-container><div id=javascript-banner><div id=javascript-banner-left></div><div id=javascript-banner-middle><div id=javascript-banner-text-a>PLEASE TURN ON YOUR</div><div id=javascript-banner-text-b>JAVASCRIPT</div></div><div id=javascript-banner-right></div></div></div></noscript>
+<script src="json/default.js"></script>
 <div class=content-noscroll id=content>
     <div class=displaynone id=preloader>
         <script src=script/preloader-transparent-or-displaynone.js></script>
@@ -92,28 +93,36 @@
                 <div id=plant-ribbon-container>
                     <div class=plant-ribbon id=plant-ribbon-1>
                         <div class=plant-ribbon-left></div>
-                        <div class=plant-ribbon-middle>2000</div>
+                        <div class=plant-ribbon-middle>
+                            <script>document.write(data['level-1']['section-1']['labelsX'][0])</script>
+                        </div>
                         <div class=plant-ribbon-right></div>
                     </div>
                     <div class=plant-ribbon id=plant-ribbon-2>
                         <div class=plant-ribbon-left></div>
-                        <div class=plant-ribbon-middle>2005</div>
+                        <div class=plant-ribbon-middle>
+                            <script>document.write(data['level-1']['section-1']['labelsX'][1])</script>
+                        </div>
                         <div class=plant-ribbon-right></div>
                     </div>
                     <div class=plant-ribbon id=plant-ribbon-3>
                         <div class=plant-ribbon-left></div>
-                        <div class=plant-ribbon-middle>2016</div>
+                        <div class=plant-ribbon-middle>
+                            <script>document.write(data['level-1']['section-1']['labelsX'][2])</script>
+                        </div>
                         <div class=plant-ribbon-right></div>
                     </div>
                     <div class=plant-ribbon id=plant-ribbon-4>
                         <div class=plant-ribbon-left></div>
-                        <div class=plant-ribbon-middle>2019</div>
+                        <div class=plant-ribbon-middle>
+                            <script>document.write(data['level-1']['section-1']['labelsX'][3])</script>
+                        </div>
                         <div class=plant-ribbon-right></div>
                     </div>
                 </div>
                 <div class="ribbon-container">
                     <div class=ribbon>
-                        Upwards Growth
+                        <script>document.write(data['level-1']['section-1']['title'])</script>
                         <i></i>
                         <i></i>
                         <i></i>
@@ -128,7 +137,7 @@
             <div class=tree-bright-a id=tree-9></div>
             <div class=tree-dark-c id=tree-10></div>
             <div class="title" id=title-about>
-                Pre-Pandemic Expectations
+                <script>document.write(data['level-1']['title'])</script>
             </div>
             <div class=tree-dark-a id=tree-7></div>
             <div class=tree-bright-a id=tree-8></div>
@@ -192,7 +201,7 @@
                 <div id=nba-ball></div>
                 <div class=ribbon-container>
                     <div class=ribbon>
-                        Future Looked Great
+                        <script>document.write(data['level-1']['section-3']['title'])</script>
                         <i></i>
                         <i></i>
                         <i></i>
@@ -236,7 +245,7 @@
                 </div>
                 <div class=ribbon-container>
                     <div class=ribbon>
-                        Global Momentum
+                        <script>document.write(data['level-1']['section-2']['title'])</script>
                         <i></i>
                         <i></i>
                         <i></i>
@@ -258,8 +267,7 @@
                 <div class=tree-bright-d id=tree-5></div>
                 <div class=tree-dark-b id=tree-6></div>
                 <div class="title" id=title-robby>
-                    2020, Year <br />
-                    in Review
+                    <script>document.write(data['title'])</script>
                 </div>
                 <div class=tree-dark-c id=tree-1></div>
                 <div class=tree-bright-e id=tree-2></div>
@@ -278,9 +286,9 @@
             <div class=sea-wave id=sea-wave-1></div>
             <div class=sea id=sea-1>
                 <div class=title id=title-skills>
-                    Covid-19 Hits! <br />
+                    <script>document.write(data['level-2']['title'])</script>
                     <span class="subtitle">
-                        The entire industry shaken to the core.
+                        <script>document.write(data['level-2']['subtitle'])</script>
                     </span>
                 </div>
                 <div class=algae-b id=algae-2></div>
@@ -292,44 +300,62 @@
                 <div class=algae-b id=algae-8></div>
                 <div id=skill-1-container>
                     <div class="skill-measurement skill-measurement-1">
-                        <div class=skill-measurement-header>200K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][0]['labelsX'][0])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div class="skill-measurement skill-measurement-2">
-                        <div class=skill-measurement-header>300K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][0]['labelsX'][1])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div class="skill-measurement skill-measurement-3">
-                        <div class=skill-measurement-header>400K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][0]['labelsX'][2])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div class="skill-measurement skill-measurement-4">
-                        <div class=skill-measurement-header>500K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][0]['labelsX'][3])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div class="skill-measurement skill-measurement-5">
-                        <div class=skill-measurement-header>600K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][0]['labelsX'][4])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div id=fish-text-container>
                         <div class=sea-ribbon-container id=fish-ribbon-container-1>
                             <div class=sea-ribbon-left></div>
-                            <div class=sea-ribbon-middle>June</div>
+                            <div class=sea-ribbon-middle>
+                                <script>document.write(data['level-2']['data'][0]['labelsY'][0])</script>
+                            </div>
                             <div class=sea-ribbon-right></div>
                         </div>
                         <div class=sea-ribbon-container id=fish-ribbon-container-2>
                             <div class=sea-ribbon-left></div>
-                            <div class=sea-ribbon-middle>July</div>
+                            <div class=sea-ribbon-middle>
+                                <script>document.write(data['level-2']['data'][0]['labelsY'][1])</script>
+                            </div>
                             <div class=sea-ribbon-right></div>
                         </div>
                         <div class=sea-ribbon-container id=fish-ribbon-container-3>
                             <div class=sea-ribbon-left></div>
-                            <div class=sea-ribbon-middle>Oct</div>
+                            <div class=sea-ribbon-middle>
+                                <script>document.write(data['level-2']['data'][0]['labelsY'][2])</script>
+                            </div>
                             <div class=sea-ribbon-right></div>
                         </div>
                         <div class=sea-ribbon-container id=fish-ribbon-container-4>
                             <div class=sea-ribbon-left></div>
-                            <div class=sea-ribbon-middle>Nov</div>
+                            <div class=sea-ribbon-middle>
+                                <script>document.write(data['level-2']['data'][0]['labelsY'][3])</script>
+                            </div>
                             <div class=sea-ribbon-right></div>
                         </div>
                     </div>
@@ -371,44 +397,62 @@
                 </div>
                 <div id=skill-2-container>
                     <div class="skill-measurement skill-measurement-1">
-                        <div class=skill-measurement-header>100K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][1]['labelsX'][0])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div class="skill-measurement skill-measurement-2">
-                        <div class=skill-measurement-header>200K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][1]['labelsX'][1])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div class="skill-measurement skill-measurement-3">
-                        <div class=skill-measurement-header>300K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][1]['labelsX'][2])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div class="skill-measurement skill-measurement-4">
-                        <div class=skill-measurement-header>400K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][1]['labelsX'][3])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div class="skill-measurement skill-measurement-5">
-                        <div class=skill-measurement-header>500K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][1]['labelsX'][4])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div id=crab-text-container>
                         <div class=sea-ribbon-container id=crab-ribbon-container-1>
                             <div class=sea-ribbon-left></div>
-                            <div class=sea-ribbon-middle>April</div>
+                            <div class=sea-ribbon-middle>
+                                <script>document.write(data['level-2']['data'][1]['labelsY'][0])</script>
+                            </div>
                             <div class=sea-ribbon-right></div>
                         </div>
                         <div class=sea-ribbon-container id=crab-ribbon-container-2>
                             <div class=sea-ribbon-left></div>
-                            <div class=sea-ribbon-middle>June</div>
+                            <div class=sea-ribbon-middle>
+                                <script>document.write(data['level-2']['data'][1]['labelsY'][1])</script>
+                            </div>
                             <div class=sea-ribbon-right></div>
                         </div>
                         <div class=sea-ribbon-container id=crab-ribbon-container-3>
                             <div class=sea-ribbon-left></div>
-                            <div class=sea-ribbon-middle>August</div>
+                            <div class=sea-ribbon-middle>
+                                <script>document.write(data['level-2']['data'][1]['labelsY'][2])</script>
+                            </div>
                             <div class=sea-ribbon-right></div>
                         </div>
                         <div class=sea-ribbon-container id=crab-ribbon-container-4>
                             <div class=sea-ribbon-left></div>
-                            <div class=sea-ribbon-middle>October</div>
+                            <div class=sea-ribbon-middle>
+                                <script>document.write(data['level-2']['data'][1]['labelsY'][3])</script>
+                            </div>
                             <div class=sea-ribbon-right></div>
                         </div>
                     </div>
@@ -441,44 +485,62 @@
                 </div>
                 <div id=skill-3-container>
                     <div class="skill-measurement skill-measurement-1">
-                        <div class=skill-measurement-header>50K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][2]['labelsX'][0])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div class="skill-measurement skill-measurement-2">
-                        <div class=skill-measurement-header>100K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][2]['labelsX'][1])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div class="skill-measurement skill-measurement-3">
-                        <div class=skill-measurement-header>150K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][2]['labelsX'][2])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div class="skill-measurement skill-measurement-4">
-                        <div class=skill-measurement-header>200K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][2]['labelsX'][3])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div class="skill-measurement skill-measurement-5">
-                        <div class=skill-measurement-header>250K</div>
+                        <div class=skill-measurement-header>
+                            <script>document.write(data['level-2']['data'][2]['labelsX'][4])</script>
+                        </div>
                         <div class=skill-measurement-line></div>
                     </div>
                     <div id=turtle-text-container>
                         <div class=sea-ribbon-container id=turtle-ribbon-container-1>
                             <div class=sea-ribbon-left></div>
-                            <div class=sea-ribbon-middle>March</div>
+                            <div class=sea-ribbon-middle>
+                                <script>document.write(data['level-2']['data'][2]['labelsY'][0])</script>
+                            </div>
                             <div class=sea-ribbon-right></div>
                         </div>
                         <div class=sea-ribbon-container id=turtle-ribbon-container-2>
                             <div class=sea-ribbon-left></div>
-                            <div class=sea-ribbon-middle>June</div>
+                            <div class=sea-ribbon-middle>
+                                <script>document.write(data['level-2']['data'][2]['labelsY'][1])</script>
+                            </div>
                             <div class=sea-ribbon-right></div>
                         </div>
                         <div class=sea-ribbon-container id=turtle-ribbon-container-3>
                             <div class=sea-ribbon-left></div>
-                            <div class=sea-ribbon-middle>August</div>
+                            <div class=sea-ribbon-middle>
+                                <script>document.write(data['level-2']['data'][2]['labelsY'][2])</script>
+                            </div>
                             <div class=sea-ribbon-right></div>
                         </div>
                         <div class=sea-ribbon-container id=turtle-ribbon-container-4>
                             <div class=sea-ribbon-left></div>
-                            <div class=sea-ribbon-middle>October</div>
+                            <div class=sea-ribbon-middle>
+                                <script>document.write(data['level-2']['data'][2]['labelsY'][3])</script>
+                            </div>
                             <div class=sea-ribbon-right></div>
                         </div>
                     </div>
@@ -522,7 +584,7 @@
             <div id=sea-floor></div>
             <div class=ribbon-absolute id=ribbon-2-1>
                 <div class=ribbon>
-                    Unprecedented Spread
+                    <script>document.write(data['level-2']['data'][0]['title'])</script>
                     <i></i>
                     <i></i>
                     <i></i>
@@ -531,7 +593,7 @@
             </div>
             <div class=ribbon-absolute id=ribbon-2-2>
                 <div class=ribbon>
-                    Events Industry Impacted
+                    <script>document.write(data['level-2']['data'][1]['title'])</script>
                     <i></i>
                     <i></i>
                     <i></i>
@@ -540,7 +602,7 @@
             </div>
             <div class=ribbon-absolute id=ribbon-2-3>
                 <div class=ribbon>
-                    Cvent Impacted
+                    <script>document.write(data['level-2']['data'][2]['title'])</script>
                     <i></i>
                     <i></i>
                     <i></i>
@@ -852,5 +914,4 @@
         </div>
     </div>
 </div>
-<script src=script/email.js></script>
 <script src=script/main.js></script>
