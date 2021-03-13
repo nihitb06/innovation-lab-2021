@@ -1517,3 +1517,6 @@ seaInformationContainerArray.push(skill1ContainerDiv, skill2ContainerDiv, skill3
 {
     setFrontLayerVerticalHeight(), setBannersContainerVerticalPosition(), setPageHeight(), detectPageVerticalPosition(), orientRobby(), setLayerSpeed(), moveLayers(), setRobbyLeftAndRightEdge(), shiftUpDownHorizontalLayersOnResize(), animateInformationAndEnemiesElements(), positionSplashContainer(), positionRobbyContainerVertically(), positionBalloonVertically(), positionSocialContainer(), positionPlants(), hideContactConfirmationContainer(), positionContactConfirmationContainer(), positionExperienceTextContainer(), positionChainBlockAndStringContainer(), positionSeaFloorObjectsVertically(), enableScrollOrSwipe(), printResizeText()
 }, $(window).on("orientationchange", orientationChangeHandler);
+$('.easter-egg').click(function () {
+    alert('You have found our Easter Egg!! Way to Go!');
+});
